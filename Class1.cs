@@ -13,7 +13,6 @@ namespace Jhague.KnifetoSword
         private const string versionString = "1.0.2";
         public static ConfigEntry<float> ConfigKnifeDamageMultiplier;
         public static ConfigEntry<float> ConfigKnifeRangeMultiplier;
-        public static ConfigEntry<float> ConfigKnifeWidthMultiplier;
         private static readonly Harmony harmony = new Harmony(myGUID);
 
         public static ManualLogSource logger;
@@ -28,10 +27,6 @@ namespace Jhague.KnifetoSword
                 "Knife Range Mulitplier",
                 3.0f,
                 "Knife Range Multipler.");
-            ConfigKnifeWidthMultiplier = Config.Bind("General",
-                "Knife Width Mulitplier",
-                1.0f,
-                "Knife Width Multipler.");
 
 
             harmony.PatchAll();
