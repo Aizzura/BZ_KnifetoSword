@@ -42,8 +42,7 @@ namespace Jhague.KnifetoSword
                 if (__instance is Knife knife)
                 {
                     float rangeMultiplier = KnifeDamagePlugin_BZ.ConfigKnifeRangeMultiplier.Value;
-                    float widthMultiplier = KnifeDamagePlugin_BZ.ConfigKnifeWidthMultiplier.Value;
-                    knife.transform.localScale = new Vector3(knife.transform.localScale.x * widthMultiplier, 
+                    knife.transform.localScale = new Vector3(knife.transform.localScale.x, 
                         knife.transform.localScale.y * rangeMultiplier, 
                         knife.transform.localScale.z);
                 }
